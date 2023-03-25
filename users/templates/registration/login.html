@@ -7,7 +7,7 @@
   <form action="{% url 'users:login' %}" method="post">
     {% csrf_token %} {{ form.as_p }}
     <button type="submit">Log in</button>
-    <input type="hidden" name="next" value="{% url 'learning_logs:index' %}" />
+    <input type="hidden" name="next" value="{% url 'blogs:index' %}" />
   </form>
 
 {% endblock content %}
