@@ -3,7 +3,7 @@ from django import forms
 from .models import BlogPost, Entry
 
 
-class TopicForm(forms.ModelForm):
+class BlogPostForm(forms.ModelForm):
     class Meta:
         model = BlogPost
         fields = ['text', ]
