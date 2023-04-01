@@ -16,7 +16,7 @@ def register(request):
             new_user = form.save()
             # Виконуємо вхід та перенаправляємо користувача на домашню сторінку
             login(request, new_user)
-            return redirect('learning_logs:index')
+            return redirect('blogs:index')
 
     context = {'form': form}
     return render(request, 'users/register.html', context)
